@@ -1,0 +1,35 @@
+<head>
+
+	<script src="http://cdn.cleverbot.io/build/1.0/cleverbot.io.min.js"></script>
+
+</head>
+
+<body onload="onLoad();">
+
+	<input type="text" name="inputText" id="inputText">
+	<button onclick="chat();">Send</button>
+
+	<script type="text/javascript">
+		var bot = new cleverbot("CQr857BJmzen8Nrw", "3psJeIWm9nLZaupKUAfvTb886EFln5sb");
+
+		function onLoad(){
+			
+			bot.setNick("sessionname");
+
+			bot.create(function (err, session) {
+
+			  // Woo, you initialized cleverbot.io.  Insert further code here
+			});
+
+		}
+
+		function chat(){
+			var chatText = document.getElementById('inputText').value;
+
+			bot.ask(chatText, function (err, response) {
+			  console.log(response);
+			});
+		}
+
+	</script>
+</body>

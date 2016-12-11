@@ -1,0 +1,24 @@
+{
+  "name": "pkgs",
+  "version": "1.0.0",
+  "description": "CleverText",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justAdevTV/CleverText.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justAdevTV/CleverText/issues"
+  },
+  "homepage": "https://github.com/justAdevTV/CleverText#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cleverbot.io": "^1.0.4",
+    "express": "^4.14.0"
+  }
+}
